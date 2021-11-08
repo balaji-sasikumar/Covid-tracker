@@ -75,7 +75,7 @@ const App = () => {
     <div className="app">
       <div className="app__left">
         <div className="app__header">
-          <h1>Corona (covid-19) Tracker </h1>
+          <h1>Covid-19 Tracker </h1>
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
