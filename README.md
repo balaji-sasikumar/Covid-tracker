@@ -1,6 +1,11 @@
 # Covid-tracker
 
-link below
+# PPT
+
+https://docs.google.com/presentation/d/1S7lxqrvuzVcWm6cMN9pSbxj6u9sjcavlgq61BQKRy4o/edit?usp=sharing
+
+
+link below(firebase deployed)
 
 https://covid-tracker-73ebd.web.app/
 
@@ -35,3 +40,4 @@ helm install <some name for your app> .
 helm ls - To show the installed charts.
 
 kubectl get ingress
+
