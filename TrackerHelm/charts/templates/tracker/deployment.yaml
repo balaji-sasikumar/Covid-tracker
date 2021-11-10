@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: '{{ .Values.tracker.label.name }}'
+  labels:
+    app: '{{ .Values.tracker.label.name }}'
+spec:
+  replicas: {{ .Values.tracker.replicas }}
+  selector:
+    matchLabels:
+      app: '{{ .Values.tracker.label.name }}'
+  template:
+    metadata:
+      labels:
+        app: '{{ .Values.tracker.label.name }}'
+        environment: '{{ .Values.environment }}'
+    spec:
+      containers:
+        - name: '{{ .Values.tracker.container.name }}'
+          image: '{{ .Values.tracker.container.image }}'
+          imagePullPolicy: '{{ .Values.tracker.container.pullPolicy }}'
+          ports:
+            - containerPort: {{ .Values.tracker.container.port }}
+          env:
+            - name: apphost
+              value: '{{ .Values.apphost }}'
+            - name: appenvironment
+              value: '{{ .Values.environment }}'

@@ -1,0 +1,18 @@
+environment: development
+
+apphost: k8s
+
+tracker:
+  label:
+    name: covidtracker
+
+  container:
+    name: covidtracker
+    pullPolicy: IfNotPresent
+    image: deathstroke45/covidtracker
+    port: 80
+  replicas: 1
+
+  service:
+    port: 3000
+    type: NodePort
