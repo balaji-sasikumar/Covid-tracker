@@ -8,7 +8,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /?(.*)
+          - path: /
             backend:
               serviceName: "{{ .Values.tracker.label.name }}"
-              servicePort: { { .Values.tracker.service.port } }
+              servicePort: {{ .Values.tracker.service.port }}

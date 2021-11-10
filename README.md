@@ -12,7 +12,7 @@ npm start
 
 npm build
 
-----------------------------------------------------------
+---
 
 # K8s deployment
 
@@ -24,7 +24,7 @@ az aks get-credentials --resource-group <resource group name>--name <kubernetes 
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.35.0/deploy/static/provider/cloud/deploy.yaml
 
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.35.0/deploy/static/provider/cloud/deploy.yaml
+helm repo add nginx-stable https://helm.nginx.com/stable
 
 helm repo update
 

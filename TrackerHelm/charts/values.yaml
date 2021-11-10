@@ -10,9 +10,9 @@ tracker:
     name: covidtracker
     pullPolicy: IfNotPresent
     image: deathstroke45/covidtracker
-    port: 80
+    port: 8080
   replicas: 1
 
   service:
-    port: 3000
+    port: 8080
     type: NodePort
