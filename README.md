@@ -9,6 +9,8 @@ link below(firebase deployed)
 
 https://covid-tracker-73ebd.web.app/
 
+AKS:http://covid-tracker.balajisasi.me/
+
 cd Covid-tracker
 
 npm i
